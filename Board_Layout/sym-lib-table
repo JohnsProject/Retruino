@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Arduino_pro_mini)(type Legacy)(uri C:/Development/Electronics/Retruino/Arduino_pro_mini.lib)(options "")(descr ""))
+  (lib (name Retruino)(type Legacy)(uri C:/Development/Electronics/Retruino/Retruino.lib)(options "")(descr ""))
+  (lib (name Retruino-rescue)(type Legacy)(uri ${KIPRJMOD}/Retruino-rescue.lib)(options "")(descr ""))
+)

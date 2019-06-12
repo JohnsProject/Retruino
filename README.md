@@ -54,6 +54,6 @@ class TestGame: public App {
 #endif
 ```
 
-To finish edit the ``Retruino.ino`` file, by adding ``#include "TestGame.h"`` and ``testGame`` to the apps array.
+To finish you need to add your app to the kernel, to do so add ``#include "TestGame.h"`` and ``kernel.addApp(testGame)`` to the ``Retruino.ino`` file.
 
 Congrats! you've just created your first Retruino app.

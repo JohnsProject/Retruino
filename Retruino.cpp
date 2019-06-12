@@ -14,9 +14,9 @@ int8_t Input::readJoystickDirection(uint8_t joystick) {
   return 0;
 }
 
-
 void Display::setup() {
   TFT_DISPLAY.begin();
+  TFT_DISPLAY.setRotation(3);
   WIDTH = TFT_DISPLAY.width();
   HEIGHT = TFT_DISPLAY.height();
   HALF_WIDTH = WIDTH >> 1;

@@ -4,10 +4,10 @@
 #include "Retruino.h"
 
 /*
- * The Desktop app is a simple GUI, that enables you to
- * select different apps using the Retruino joystick
- * and display.
- */
+   The Desktop app is a simple GUI, that enables you to
+   select different apps using the Retruino joystick
+   and display.
+*/
 extern class Desktop: public App {
 
     const uint32_t BACKROUND_COLOR = 0x4d5bff;

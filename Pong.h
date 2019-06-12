@@ -102,7 +102,7 @@ class Pong: public App {
     }
 
     // drawing methods //
-    
+
     void drawBAT1(uint32_t color) {
       display.fillRect(bat1_x - HALF_BAT_WIDTH, bat1_y - HALF_BAT_HEIGHT, BAT_WIDTH, BAT_HEIGHT, color);
     }
@@ -131,4 +131,4 @@ class Pong: public App {
     }
 } pong;
 
-#endif 
+#endif

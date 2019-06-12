@@ -2,21 +2,19 @@
 #define __RETRUINO_H_INCLUDED__
 
 #include <TFT.h>
-#include "Kernel.h"
-
+#include <Arduios_Kernel.h>
 
 /*
- * The Retruino library is used to access the components of the
- * Retruino in a hardware independet way, that means, if you
- * have another hardware just change the library and everything works.
- */
- 
+   The Retruino library is used to access the components of the
+   Retruino in a hardware independet way, that means, if you
+   have another hardware just change the library and everything works.
+*/
 
 extern struct Input {
 
   const uint8_t JOY_X = 1;
   const uint8_t JOY_Y = 0;
-  
+
   // Returns the position of the joystick in the given axis
   // Returns values between 0 and 1024
   uint16_t readJoystick(uint8_t joystick);
@@ -41,14 +39,14 @@ extern struct Display {
   uint8_t HEIGHT;
   uint8_t HALF_WIDTH;
   uint8_t HALF_HEIGHT;
-  
+
   // This method should be called before using the display
   // By default its called by the Desktop so no need to call anymore
   void setup();
-  
+
   // Colors are always hex colors
   // I think the parameters rest are self reponding
-  
+
   // Method used to draw a pixel
   void drawPixel (uint8_t x, uint8_t y, uint32_t color);
   // Method used to draw a line

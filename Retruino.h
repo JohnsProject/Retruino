@@ -59,10 +59,18 @@ extern struct Display {
   void drawCircle (uint8_t x, uint8_t y, uint8_t r, uint32_t color);
   // Method used to draw a filled circle
   void fillCircle (uint8_t x, uint8_t y, uint8_t r, uint32_t color);
-  // Method used to draw text
+  // Method used to draw string text
+  void drawText (uint8_t x, uint8_t y, String &text, uint32_t color, uint8_t size);
+  // Method used to draw char[] text
   void drawText (uint8_t x, uint8_t y, char text[], uint32_t color, uint8_t size);
   // This method fills the display with the given color
   void fill (uint32_t color);
+  
+  private:
+  uint8_t red;
+  uint8_t green;
+  uint8_t blue;
+  void getColorValues (uint32_t color);
 
 } display;
 

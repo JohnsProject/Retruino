@@ -25,7 +25,7 @@ extern class Desktop: public App {
     void setup();
     void loop();
     void drawMenu();
-    void addItem(char text[]);
+    void addItem(String text);
 
 } desktop;
 

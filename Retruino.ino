@@ -24,13 +24,13 @@
 */
 #include "Retruino.h"
 #include "Desktop.h"
-#include "TestGame.h"
-#include "Pong.h"
+//#include "TestGame.h"
+//#include "Pong.h"
 
 void setup() {
   kernel.addApp(desktop);
-  kernel.addApp(testGame); // uncomment to enable TestGame
-  kernel.addApp(pong); // uncomment to enable Pong
+  //kernel.addApp(testGame); // uncomment to enable TestGame
+  //kernel.addApp(pong); // uncomment to enable Pong
   kernel.setup();
 }
 

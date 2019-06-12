@@ -1,6 +1,5 @@
 # Retruino
 Retruino is a tiny retro gaming console for the arduino, it's based on the ![Arduios](https://github.com/JohnsProject/Arduios), what enables you to upload multiple retro games once and play them.
-
 ## Creating your own games
 It's very simple to create your own Retruino games. 
 
@@ -57,3 +56,5 @@ class TestGame: public App {
 To finish you need to add your app to the kernel, to do so add ``#include "TestGame.h"`` and ``kernel.addApp(testGame)`` to the ``Retruino.ino`` file.
 
 Congrats! you've just created your first Retruino app.
+
+## NOTE: The Retruino needs the Arduios library installed in your Arduino IDE.
